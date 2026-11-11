@@ -37,7 +37,7 @@ jobs:
 
       - name: Check if cache exists
         id: check_cache
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v6
         with:
           path: |
             build/libkrunfw/libkrunfw*.so*
@@ -87,7 +87,7 @@ jobs:
           ./build_libkrun.sh --no-cleanup --force-build
 
       - name: Cache libkrun
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v6
         with:
           path: |
             build/libkrunfw/libkrunfw*.so*
@@ -112,7 +112,7 @@ jobs:
         uses: Swatinem/rust-cache@v2
 
       - name: Restore libkrun cache
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v6
         with:
           path: |
             build/libkrunfw/libkrunfw*.so*
@@ -192,7 +192,7 @@ jobs:
         uses: Swatinem/rust-cache@v2
 
       - name: Restore libkrun cache
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v6
         with:
           path: |
             build/libkrunfw/libkrunfw*.so*
