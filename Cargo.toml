@@ -30,7 +30,7 @@ bytes = "1.9"
 libipld = "0.16"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
-structstruck = "0.4"
+structstruck = "0.5"
 xattr = "1.3"
 sha2 = "0.10"
 thiserror = "2.0"
