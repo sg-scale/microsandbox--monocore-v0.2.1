@@ -24,7 +24,7 @@ jobs:
       should_build: ${{ steps.check_build.outputs.should_build }}
       libkrun_hash: ${{ steps.hash_libkrun.outputs.hash }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 2
 
@@ -67,7 +67,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Install Dependencies
         run: |
@@ -106,7 +106,7 @@ jobs:
           - nightly
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Cache Project
         uses: Swatinem/rust-cache@v2
@@ -181,7 +181,7 @@ jobs:
           - nightly
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Install Environment Packages
         run: |
